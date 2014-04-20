@@ -1,12 +1,15 @@
 
 public class Personnage 
 {
+	/* Constantes */
 	private static final Position DEFAULT_POSITION = new Position();
 	private static final Direction DEFAULT_DIRECTION = Direction.BAS;
 	
+	/* Attributs */
 	private Position posPersonnage;
 	private Direction dirPersonnage;
 	
+	/* Méthodes */
 	/**
 	 * Création d'un personnage avec une direction et une position par défaut
 	 */

@@ -1,12 +1,15 @@
 
 public class Position 
 {
+	/* Constantes */
 	private static final int DEFAULT_COORDINATE_X = 0;
 	private static final int DEFAULT_COORDINATE_Y = 0;
 	
+	/* Attributs */
 	private int coordinate_X;
 	private int coordinate_Y;
 	
+	/* Méthodes */
 	/**
 	 * Création d'une nouvelle position en 2 dimensions avec les coordonnées par défaut
 	 */

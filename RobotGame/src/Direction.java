@@ -1,4 +1,4 @@
-
+/* Enumération directions */
 public enum Direction 
 {
 	HAUT,
