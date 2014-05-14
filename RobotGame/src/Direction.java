@@ -20,7 +20,7 @@ public enum Direction
 		this.X = x;
 		this.Y = y;
 	}
-	
+	 
 	/**
 	 * Obtention de la coordonnée X de la dirction
 	 * @return La coordonnée X (Horizontale)
