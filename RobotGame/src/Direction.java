@@ -6,6 +6,7 @@ public enum Direction
 	GAUCHE(-1, 0),
 	DROITE(1, 0);
 	
+	/* Attributs */
 	private int X;
 	private int Y;
 	
