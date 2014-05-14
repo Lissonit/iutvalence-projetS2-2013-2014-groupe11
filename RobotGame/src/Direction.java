@@ -4,5 +4,12 @@ public enum Direction
 	HAUT,
 	BAS,
 	GAUCHE,
-	DROITE
+	DROITE;
+	
+	public Direction obtenirDir()
+	{
+		return this;
+	}
 }
+
+/**/
