@@ -1,12 +1,17 @@
+import Exceptions.OutOfRangeException;
+
 
 public class Environnement 
 {
+	/* Constantes */
 	private static final int DEFAUT_CARTE_LARGEUR = 20;
 	private static final int DEFAUT_CARTE_HAUTEUR = 20;
 	
+	/* Attributs carte de jeu */
 	private int largeurCarte;
 	private int hauteurCarte;
 	
+	/* Tableaux de données */
 	private int[][] carte;
 	private int[] obstacles;
 	
@@ -27,11 +32,11 @@ public class Environnement
 	 */
 	public boolean estObstacle(Position position) throws OutOfRangeException
 	{
-		if(position.obtenirX() < 0 || position.obtenirX() > this.largeurCarte ||
-		   position.obtenirY() < 0 || position.obtenirY() > this.hauteurCarte)
+		if(position.X() < 0 || position.X() > this.largeurCarte ||
+		   position.Y() < 0 || position.Y() > this.hauteurCarte)
 			throw new OutOfRangeException("La position est en dehors de la carte");
 		
-		int indicePositionCarte = this.carte[position.obtenirX()][position.obtenirY()];
+		int indicePositionCarte = this.carte[position.X()][position.Y()];
 		
 		for(int indiceCourantObstacle : this.obstacles)
 			if(indiceCourantObstacle == indicePositionCarte)
